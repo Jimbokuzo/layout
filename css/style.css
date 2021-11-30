@@ -7,6 +7,7 @@ html {
           box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  font-family: "Poppins";
 }
 
 a {
@@ -18,53 +19,58 @@ a {
   margin: 0 auto;
 }
 
-.sect-3 .wrapper .block {
+.wrapper .block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  background: lemonchiffon;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.sect-3 .wrapper .block .text {
-  background: lightblue;
-  margin-top: 20px;
+.wrapper .block .text {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 80px;
 }
 
-.sect-3 .wrapper .block .text .chapter {
+.wrapper .block .text .chapter {
   font-size: 36px;
   color: black;
   text-align: left;
   margin-bottom: 70px;
+  font-weight: bold;
 }
 
-.sect-3 .wrapper .block .text .chapter span {
+.wrapper .block .text .chapter span {
   color: #ffae00;
 }
 
-.sect-3 .wrapper .block .text .item .text-1 {
+.wrapper .block .text .item .text-1 {
   font-size: 18px;
   font-weight: bold;
   position: relative;
   padding-left: 50px;
+  margin-bottom: 20px;
 }
 
-.sect-3 .wrapper .block .text .item .text-1::before {
+.wrapper .block .text .item .text-1::before {
   content: "";
   position: absolute;
   width: 40px;
-  height: 5px;
+  height: 3px;
   background-color: black;
   margin-left: -50px;
+  margin-top: 5px;
 }
 
-.sect-3 .wrapper .block .text .item .text-2 {
+.wrapper .block .text .item .text-2 {
   padding-left: 50px;
   color: #666666;
   text-align: left;
   font-size: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 /*# sourceMappingURL=style.css.map */
