@@ -1,4 +1,6 @@
-*, body, html {
+*,
+body,
+html {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -14,5 +16,55 @@ a {
 .wrapper {
   max-width: 1171px;
   margin: 0 auto;
+}
+
+.sect-3 .wrapper .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: lemonchiffon;
+}
+
+.sect-3 .wrapper .block .text {
+  background: lightblue;
+  margin-top: 20px;
+}
+
+.sect-3 .wrapper .block .text .chapter {
+  font-size: 36px;
+  color: black;
+  text-align: left;
+  margin-bottom: 70px;
+}
+
+.sect-3 .wrapper .block .text .chapter span {
+  color: #ffae00;
+}
+
+.sect-3 .wrapper .block .text .item .text-1 {
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  padding-left: 50px;
+}
+
+.sect-3 .wrapper .block .text .item .text-1::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  background-color: black;
+  margin-left: -50px;
+}
+
+.sect-3 .wrapper .block .text .item .text-2 {
+  padding-left: 50px;
+  color: #666666;
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
